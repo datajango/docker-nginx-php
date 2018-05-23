@@ -17,6 +17,6 @@ services:
     volumes:
       - ./volumes/www/html:/var/www/html
     environment:
-      #PHP_IDE_CONFIG: "serverName=docker"
+      PHP_IDE_CONFIG: "serverName=docker"
       PHP_XDEBUG_ENABLED: 1 # Set 1 to enable.
       XDEBUG_CONFIG: remote_host=192.168.0.6
