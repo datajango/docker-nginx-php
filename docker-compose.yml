@@ -20,3 +20,22 @@ services:
       PHP_IDE_CONFIG: "serverName=docker"
       PHP_XDEBUG_ENABLED: 1 # Set 1 to enable.
       XDEBUG_CONFIG: remote_host=192.168.0.6
+    links:
+      - db
+
+  db:
+    image: mysql:5.7
+    #image: mysql:latest
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_DATABASE: test
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+
+volumes:
+    db_data:

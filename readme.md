@@ -40,3 +40,12 @@ Connect to container with bash.
 ```sh
 docker-compose exec web bash
 ```
+
+
+## Mysql Command Line
+```sh
+docker-compose exec db bash
+mysql --user=test --password=test test
+mysql> exit
+root@8792ae92e4f8:/# exit
+```
