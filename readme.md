@@ -49,3 +49,6 @@ mysql --user=test --password=test test
 mysql> exit
 root@8792ae92e4f8:/# exit
 ```
+
+docker-compose exec json-server bash
+
