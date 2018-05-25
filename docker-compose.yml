@@ -11,7 +11,8 @@ services:
       - ./volumes/www/html:/var/www/html
     links:
       - php
-      #- json-server
+      - json-server
+      - nodejs
 
   json-server:
     build: ./json-server

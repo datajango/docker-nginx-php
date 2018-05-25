@@ -10,5 +10,5 @@ WORKDIR /var/json-server
 #ENTRYPOINT ["bash", "./run.sh"]
 #CMD []
 
-EXPOSE 8081
+#EXPOSE 8081
 CMD [ "json-server", "/var/json-server/db.json", "-p 8081" ]
